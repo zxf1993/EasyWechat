@@ -1,1 +1,4 @@
 .idea
+Application/Common/Conf/config.php
+Application/Runtime
+vendor

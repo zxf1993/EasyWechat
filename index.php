@@ -8,7 +8,7 @@
 // +----------------------------------------------------------------------
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
-
+define('ROOT_PATH', str_replace('/web', '', str_replace('\\', '/', __DIR__)));
 // 应用入口文件
 
 // 检测PHP环境
@@ -22,6 +22,7 @@ define('APP_DEBUG', true);
 // 定义应用目录
 define('APP_PATH', './Application/');
 
+require ROOT_PATH . '/vendor/autoload.php';
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';
 

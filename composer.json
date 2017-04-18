@@ -1,18 +1,24 @@
 {
-    "name": "topthink/thinkphp",
-    "description": "the ThinkPHP Framework",
+    "name": "wechat/thinkphp",
+    "description": "testEasyWechat",
     "type": "framework",
-    "keywords": ["framework","thinkphp","ORM"],
-    "homepage": "http://thinkphp.cn/",
-    "license": "Apache2",
+    "keywords": ["framework","thinkphp","wechat"],
+    "homepage": "http://blog.zhangxiufeng.cn/",
+    "license": "MIT",
     "authors": [
         {
-            "name": "liu21st",
-            "email": "liu21st@gmail.com"
+            "name": "zhangxiufeng",
+            "email": "15011211389@163.com"
         }
     ],
     "require": {
-        "php": ">=5.3.0"
+        "overtrue/wechat": "~3.1"
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
 }
