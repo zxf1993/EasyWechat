@@ -69,8 +69,16 @@ class IndexController extends Controller
 		];
 		$app = new Application($options);
 
+		// $response = $app->server->serve();
+		// 将响应输出
+		// $response->send();
+		// 
+		$server->setMessageHandler(function ($message) {
+		    return "您好！欢迎关注我!";
+		});
 		$response = $app->server->serve();
 		// 将响应输出
-		$response->send();
+		$response->send(); // Laravel 里请使用：return $response;
+
 	}
 }
